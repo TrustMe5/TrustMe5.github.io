@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset='utf-8' />
+<title> read</title>
+</head>
+<body>
+
+<input type='button' onclick="msg()" value='start'></input>
+<input type='button' onclick="st()" value='stop'></input>
+</br>
+    <span id='span'>hello world!</span>
+    </br>
+    <input id='input' type='text' name='content' readonly=''>
+    <script> function msg(){
+var request=new XMLHttpRequest();
+request.open('GET','example.txt',true);
+var text=request.responseText;
+var tt=document.getElementById('input');
+//tt.setAttribute("value",'kawanidfhdj');
+var sp=document.getElementById('span');
+//sp.lastChild.nodeValue='hahahahah';
+tt.removeAttribute('readonly');
+    }</script>
+    <script> function st(){
+var input=document.getElementById('input');
+input.setAttribute('readonly','');
+    }</script>
+
+    <script>
+
+var i=0;
+function gn(e){
+var keycode=e.which;
+var realkey=String.fromCharCode(e.which);
+alert(realkey);
+var target=document.getElementById('span');
+var array=new Array();
+var length=target.lastChild.nodeValue.length;
+array=target.lastChild.nodeValue;
+    
+var spans=document.createElement('span');
+var txt=document.createTextNode(array[0]);
+spans.appendChild(txt);
+
+//spans.lastChild.nodeValue='array[i]';
+if(realkey.toLowerCase()==array[0]){
+    spans.setAttribute('class','green');
+}else{
+spans.setAttribute('class','red');
+}
+
+target.insertBefore(spans,target.lastChild);
+
+var text;
+text=target.lastChild.nodeValue.slice(i+1);
+target.lastChild.nodeValue=text;
+i++;
+    }
+document.onkeyup=gn;
+    </script>
+    <style>
+.green{
+    color:green;
+}
+.red{
+    color:red;
+}
+
+</style>
+    </body>
+    </html>
