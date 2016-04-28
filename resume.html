@@ -1,1 +1,278 @@
-hhaha
+<!doctype html>
+<html lang="zh">
+<head>
+  <title>Trditional Resume</title>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="StyleSheet" href="css/reset.css"/>
+  <link type="text/css" rel="StyleSheet" href="css/main.css"/>
+  <style type="text/css">
+    body{
+      background-image:url(images/bg.png);
+    }
+    .item-title{
+      width:100px;
+      padding:4px;
+      line-height: 1.8;
+    }
+    .item-content{
+      padding:4px;
+      line-height: 1.8;
+    }
+    img{
+      position:absolute;
+      left:70%;
+      top:14%;
+    }
+    li{
+      padding:7px 0px;
+    }
+    li::before{
+      content:url(./images/icons/yes.png);    
+      padding-right:6px;
+      vertical-align: middle;
+    }
+    .item-wrap{
+      display:-moz-box;
+      display:-webkit-box;
+      display:box;
+      padding:6px 0px;
+      border-bottom:solid 1px #aaa;
+      margin-bottom:6px;
+      width: 100%;
+    }
+    .item-box-left{
+      width: 100px;
+    }
+    .item-box-right{
+       width: 700px;
+    }
+    .item-title-hl{
+      font-size:18px;
+      padding:4px;
+      background-color: #ddd; 
+      border-bottom:solid 2px #ccc;
+    }
+    .project-title{
+      font-size:18px;
+      line-height: 1.8;
+      padding:4px;
+    }
+    .project-sub-title{
+      padding:4px;
+      line-height: 1.8;
+      width:70px;
+    }
+    #goTop{
+      position:fixed;
+      right:100px; 
+      bottom:100px; 
+      background-image:url(images/icons/top.png);
+      width:32px; 
+      height:32px; 
+      -webkit-box-reflect: below 0px -webkit-gradient(linear, center top, center bottom, from(transparent),color-stop(0.2, transparent), to(white));  
+      opacity: 0.5;
+    }
+    .reflect{
+      background-image:url(images/icons/top.png);
+      width:32px; 
+      height:32px; 
+      -webkit-transform: scaleY(-1); 
+      -moz-transform: scaleY(-1); 
+      -ms-transform: scaleY(-1); 
+      transform: scaleY(-1); 
+      filter:alpha(opacity='80'); 
+      opacity: 0.8;
+    }
+    .shadow{
+      position: relative;
+      top:-32px;
+      left:0px;
+      height:32px;
+      width:32px;
+      background-image: -moz-linear-gradient(center bottom, rgb(227,227,227) 30%, rgba(255,255,255,0) 100%); 
+      background-image: -webkit-gradient(linear, center bottom, center top, color-stop(0.3, rgb(227,227,227)), color-stop(0.7, rgba(255,255,255,0))); 
+      filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColor=#e8e8e8, EndColorStr=#ffffff); 
+    }
+  </style>
+  <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body style="margin:0px auto;width:800px;">
+  <header>
+    <h1 style="color:#e8e8e8; font-size: 30px; font-weight:bold;text-align:right;text-shadow: 2px 2px 2px #333, 0px 0px 5px #666; margin-top:15px;">个人简历</h1>
+    <section style="padding:6px 0px;">
+      <hr/>
+    </section>
+  </header>
+  <article style="padding:10px 0px;">
+    <section class="item-box-left">
+        <span class="item-title-hl">个人信息</span>
+      </section>
+    <section>
+      <table style="width:100%">
+        <tr>
+          <td class="item-title">姓名：</td>
+          <td class="item-content">吴德超</td>
+          <td class="item-title">学校及专业：</td>
+          <td class="item-content">山东理工大学计算机科学与技术</td>
+        </tr>
+        <tr>
+          <td class="item-title">电话号码：</td>
+          <td class="item-content">18369959235</td>
+          <td class="item-title">邮箱：</td>
+          <td class="item-content">18369959235@163.com</td>
+        </tr>
+        <tr>
+          <td class="item-title">性别：</td>
+          <td class="item-content">男</td>
+          <td class="item-title">出生日期：</td>
+          <td class="item-content">1992.2</td>
+        </tr>
+        <img src='img/wdc.jpg' >
+      </table>
+    </section>
+    <section style="margin:4px 0px; height:2px; background-color:#888;"></section>
+    <section class="item-wrap">
+      <section class="item-box-left">
+        <span class="item-title-hl">应聘岗位</span>
+      </section>
+
+      <section class="item-box-right">
+        大数据分析实习生
+      </section>
+    </section>
+    <section class="item-wrap">
+      <section class="item-box-left">
+        <span class="item-title-hl">专业技能</span>
+      </section>
+      <section class="item-box-right">
+        <ul>
+          <li>掌握基础算法、数据结构,参加过 ACM 竞赛</li>
+          <li>熟悉 C/C++、Python 等编程语言</li>
+          <li>熟练掌握 Linux 平台开发和常用数据库操作</li>
+          <li>熟悉机器学习领域相关的各种经典算法(决策树、贝叶斯、SVM、逻辑回归、kmeans聚类等)</li>
+          <li>具有良好的学习、沟通协作能力</li>
+        </ul>
+      </section>
+    </section>
+    <section class="item-wrap">
+      <section class="item-box-left">
+        <span class="item-title-hl">教育经历</span>
+      </section>
+      <section class="item-box-right" style="margin-bottom:10px;">
+        <table>
+          <tr>
+            <td style="width:150px;">2011.09~2015.06</td>
+            <td style="width:250px;">济宁医学院</td>
+            <td>计算机科学与技术（本科）</td>
+          </tr>
+          <tr>
+            <td style="width:150px;">2015.09~至今</td>
+            <td style="width:250px;">山东理工大学</td>
+            <td>计算机科学与技术（硕士）</td>
+          </tr>
+        </table>
+      </section>
+    </section>
+  
+    <section class="item-wrap">
+      <section class="item-box-left">
+        <span class="item-title-hl">项目经历</span>
+      </section>
+      <section class="item-box-right">
+        <section>
+           <table style="margin-bottom:10px; border-bottom:dashed 1px #ccc;">
+          <tr>
+            <td colspan="2" class="project-title">2015.12 ~ 2016.2</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">项目名称:</td>
+            <td class="item-content">SDUT Typing System(山东理工大学在线打字系统)</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">项目描述:</td>
+            <td class="item-content">开发这个打字系统的初衷是为了提升我们 ACM 实验室集训队员的打字能力,
+系统分为练习和比赛两部分,该系统可以记录队员的日常在线打字情况,并定期组织比赛对队员进行测试。</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">使用技术:</td>
+            <td class="item-content">Flask 、Bootstrap、Python、JavaScript</td>
+          </tr>
+        </table>
+        <table style="margin-bottom:10px; border-bottom:dashed 1px #ccc;">
+          <tr>
+            <td colspan="2" class="project-title">2016.2 ~ 至今</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">项目名称:</td>
+            <td class="item-content">参加kaggle与阿里云天池大数据竞赛</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">项目描述:</td>
+            <td class="item-content">参加这种大数据比赛，能够锻炼到对于数据的"嗅觉"，从数据本身问题本身出发，针对问题的特性来设计最适合的方案。</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">使用到的python库与训练模型:</td>
+          
+            <td class="item-content">Numpy、Pandas、Scikit-learn、KNN、决策树、SVM、逻辑回归、k-means聚类</td>
+          </tr>
+        </table>
+        </section>
+      </section>
+    </section>
+    
+    
+    <section class="item-wrap">
+      <section class="item-box-left">
+        <span class="item-title-hl">自我评价</span>
+      </section>
+      <section class="item-box-right" style="margin-bottom:10px;">
+        <ul>
+          <li>性格乐观开朗，能够调节团队氛围</li>
+          <li>对技术感兴趣，广泛关注行业知识、动向，喜欢钻研技术原理</li>
+          <li>对数据有极大的热情，热衷于算法优化与技术分享</li>
+        </ul>
+      </section>
+    </section>
+     <section class="item-wrap" style="border:0;">
+      <section class="item-box-left">
+        <span class="item-title-hl">兴趣爱好</span>
+      </section>
+      <section class="item-box-right">
+        浏览技术博客、分享技术、篮球、跑步
+      </section>
+    </section>
+    <aside id="wrap" style="position:fixed; bottom:100px; right:100px;display:none; opacity:0.5;">
+      <section style="background-image:url(images/icons/top.png); width:32px;height:32px;"></section>
+      <section class="reflect"></section>
+      <section class="shadow"></section>
+    </aside>
+  </article>
+
+  <script type="text/javascript">
+    $(function(){
+      $('#wrap').on('click', function(event) {
+        var obj=document.body.scrollTop>0? document.body:document.documentElement;
+        $(obj).animate({"scrollTop":0}, 1000);
+        $(this).animate({"opacity":0.5}, 1000);
+      }).on('mouseover', function(event) {
+        $(this).css('opacity',1);
+      }).on('mouseout',function(event) {
+        $(this).css('opacity',0.5);
+      });
+    });
+    $(document).scroll(function(event) {
+      var goTop=$('#wrap');
+      var scrollTop=document.body.scrollTop || document.documentElement.scrollTop || 0;
+      if(scrollTop>0){
+        if(goTop.css('display')=='none'){
+          $('#wrap').fadeIn(500);
+        } 
+      }else{
+        if(goTop.css('display')!='none'){
+          $('#wrap').fadeOut(500);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
